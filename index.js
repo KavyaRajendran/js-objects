@@ -102,6 +102,9 @@ mark3 = prompt("Enter mark3");
         this.mark3=mark3;
         this.getDetails = function() {
           return {name:this.name,mark1:this.mark1,mark:this.mark2,mark3:this.mark3};
+          this.getTotal = function() {
+            return [name:this.name,]
+          }
         }
         }
 
