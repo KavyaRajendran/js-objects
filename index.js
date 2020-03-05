@@ -1,4 +1,4 @@
-//creation of objects
+//object creation with braces
 
 const obj = {
   Firstname:"Kavya",         //setting keys & values
@@ -47,6 +47,7 @@ const obj = {
   }
 }
 
+//Object call
 let Firstname = obj.getFName();
 console.log("Firstname:",Firstname);
 Firstname = obj.setFName("Kaviya");
@@ -76,3 +77,53 @@ let College = obj.getCollege();
 console.log("College:",College);
 let College = obj.setCollege("Sri Eshwar");
 console.log("College:",College);
+
+/*----------------------------------------------------------------*/
+/*function Book (type, author) {
+    this.type = type;
+    this.author = author;
+    this.getDetails = function () {
+        return this.type + " written by " + this.author;
+    }
+}
+var book = new Book("Fiction", "Peter King");
+alert(book.getDetails()); */
+
+name = prompt("Enter name");
+mark1 = prompt("Enter mark1");
+mark2 = prompt("Enter mark2");
+mark3 = prompt("Enter mark3");
+ var details = new Details(name,mark1,mark2,mark3);
+    console.log(details.getDetails());
+    function Details(name,mark1,mark2,mark3) {
+        this.name=name;
+        this.mark1=mark1;
+        this.mark2=mark2;
+        this.mark3=mark3;
+        this.getDetails = function() {
+          return {name:this.name,mark1:this.mark1,mark:this.mark2,mark3:this.mark3};
+        }
+        }
+
+
+
+       
+    /*
+ setName:function() {
+        return this.name;
+ },
+ setMark1:function() {
+    return this.mark1;
+},
+setMark2:function() {
+    return this.mark2;
+},
+setMark3:function() {
+    return this.mark3;
+}
+    }
+    var details = new details(prompt1,prompt2,prompt3,prompt4);
+    console.log(details);
+    */
+
+
